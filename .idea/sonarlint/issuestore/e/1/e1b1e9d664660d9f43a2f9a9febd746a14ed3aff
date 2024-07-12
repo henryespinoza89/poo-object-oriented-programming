@@ -1,0 +1,12 @@
+
+y
+java:S1104"WMake publicField a static final constant or non-public and provide accessors if needed.(±è®úÿÿÿÿÿ8ŒşÊ¹ƒ2
+F
+java:S2629."$Invoke method(s) only conditionally.(àËÚÎùÿÿÿÿ8‰¾Ó¹ƒ2
+@
+java:S2629/"$Invoke method(s) only conditionally.(Âº·38°ÿÓ¹ƒ2
+A
+java:S26290"$Invoke method(s) only conditionally.(Èä³¥8±ÿÓ¹ƒ2
+F
+java:S26291"$Invoke method(s) only conditionally.(¹‘Ã•úÿÿÿÿ8±ÿÓ¹ƒ2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŒçÀÿıÿÿÿÿ8ŒşÊ¹ƒ2
