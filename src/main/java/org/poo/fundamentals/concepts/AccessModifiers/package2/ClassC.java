@@ -1,13 +1,13 @@
 package org.poo.fundamentals.concepts.AccessModifiers.package2;
 
-import org.poo.fundamentals.concepts.AccessModifiers.package1.ClaseA;
+import org.poo.fundamentals.concepts.AccessModifiers.package1.ClassA;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ClaseC extends ClaseA {
-  private static final Logger logger = LoggerFactory.getLogger(ClaseC.class);
+public class ClassC extends ClassA {
+  private static final Logger logger = LoggerFactory.getLogger(ClassC.class);
   public void accessFromDifferentPackage() {
-    ClaseA a = new ClaseA();
+    ClassA a = new ClassA();
     logger.info(String.valueOf(a.publicField)); // Acceso permitido
     // logger.info(a.protectedField); // Error: no se puede acceder a un campo protegido desde una referencia de ClaseA
     // logger.info(a.defaultField); // Error: no se puede acceder a un campo por defecto (package-private) desde otro paquete

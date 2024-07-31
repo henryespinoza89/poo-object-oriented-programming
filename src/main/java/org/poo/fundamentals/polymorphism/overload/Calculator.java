@@ -1,6 +1,6 @@
 package org.poo.fundamentals.polymorphism.overload;
 
-public class Calculadora {
+public class Calculator {
   // Documentation: https://www.javatpoint.com/method-overloading-in-java
   /* Definición: El polimorfismo permite que un método pueda comportarse de diferentes maneras según el objeto
      que lo invoque. Hay dos tipos principales de polimorfismo:
@@ -8,11 +8,11 @@ public class Calculadora {
      pero con diferentes parámetros en la misma clase, proporcionando flexibilidad para usar el mismo método en
      diferentes contextos. */
   // Método sobrecargado para sumar dos enteros
-  public int sumar(int a, int b) {
+  public int add(int a, int b) {
     return a + b;
   }
   // Método sobrecargado para sumar dos números decimales
-  public double sumar(double a, double b) {
+  public double add(double a, double b) {
     return a + b;
   }
 }

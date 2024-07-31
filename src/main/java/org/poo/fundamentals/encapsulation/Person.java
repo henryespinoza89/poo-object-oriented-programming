@@ -3,8 +3,8 @@ package org.poo.fundamentals.encapsulation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Persona {
-  private static final Logger logger = LoggerFactory.getLogger(Persona.class);
+public class Person {
+  private static final Logger logger = LoggerFactory.getLogger(Person.class);
   // Documentation: https://www.javatpoint.com/encapsulation
   /* Encapsulamiento
      Es un principio de diseño que tiene como objetivo agrupar datos (atributos) y métodos (funciones o comportamientos)
@@ -24,30 +24,30 @@ public class Persona {
      internos no afectan el código que utiliza la clase mientras la interfaz pública se mantenga constante.
      4. Control y Seguridad: Proporciona control sobre cómo los datos son accedidos y modificados, permitiendo imponer
      restricciones y validaciones. */
-  private String nombre;
-  private int edad;
-  public Persona(String nombre, int edad) {
-    this.nombre = nombre;
-    this.edad = edad;
+  private String name;
+  private int age;
+  public Person(String name, int age) {
+    this.name = name;
+    this.age = age;
   }
-  public String getNombre() {
-    return nombre;
+  public String getName() {
+    return name;
   }
-  public void setNombre(String nombre) {
-    this.nombre = nombre;
+  public void setName(String name) {
+    this.name = name;
   }
-  public int getEdad() {
-    return edad;
+  public int getAge() {
+    return age;
   }
-  public void setEdad(int edad) {
-    if (edad >= 0) {
-      this.edad = edad;
+  public void setAge(int age) {
+    if (age >= 0) {
+      this.age = age;
     } else {
-      logger.info("La edad no puede ser negativa.");
+      logger.info("Age cannot be negative.");
     }
   }
-  public void describir() {
-    logger.info("Nombre: {}, Edad: {}", nombre, edad);
+  public void describe() {
+    logger.info("Name: {}, Age: {}", name, age);
   }
   /* Explicación
      1. Atributos Privados: Los atributos nombre y edad están declarados como privados (private), lo que impide el acceso

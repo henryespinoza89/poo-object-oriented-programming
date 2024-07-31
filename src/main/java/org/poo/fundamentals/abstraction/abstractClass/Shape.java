@@ -1,6 +1,6 @@
 package org.poo.fundamentals.abstraction.abstractClass;
 
-abstract class Forma {
+abstract class Shape {
   // Documentation: https://www.javatpoint.com/interface-in-java
   /* Definición: Se refiere al proceso de simplificar sistemas complejos mostrando solo los detalles esenciales y
      ocultando los detalles de implementación. En otras palabras, la abstracción permite centrarse en qué hace un
@@ -12,15 +12,15 @@ abstract class Forma {
   /* Imaginemos un sistema para diferentes tipos de formas geométricas. Podemos crear una clase abstracta Forma que
      define métodos abstractos para calcular el área y el perímetro, y luego crear subclases específicas para Circulo
      y Rectangulo que implementan estos métodos. */
-  private String color;
-  public Forma(String color) {
-    this.color = color;
+  private String colour;
+  public Shape(String colour) {
+    this.colour = colour;
   }
-  public String getColor() {
-    return color;
+  public String getColour() {
+    return colour;
   }
-  public abstract double calcularArea();
-  public abstract double calcularPerimetro();
+  public abstract double calculateArea();
+  public abstract double calculatePerimeter();
   /* Clase Abstracta Forma:
      Define los métodos abstractos calcularArea() y calcularPerimetro() que deben ser implementados por las subclases.
      Incluye un atributo color y un método getColor() para obtener el color de la forma. */

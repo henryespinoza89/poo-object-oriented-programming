@@ -1,6 +1,6 @@
 package org.poo.fundamentals.concepts.abstractClasses;
 
-public abstract class Empleado {
+public abstract class Employee {
   /* Definición: Una clase abstracta es una clase en la Programación Orientada a Objetos (POO) que no puede ser
    instanciada directamente y está diseñada para ser extendida por otras clases. Las clases abstractas pueden
    contener métodos abstractos, que son métodos declarados sin implementación, y métodos concretos, que tienen
@@ -22,16 +22,16 @@ public abstract class Empleado {
    métodos y atributos comunes, y luego crear subclases específicas como EmpleadoTiempoCompleto y EmpleadoMedioTiempo
    que extienden Empleado y proporcionan implementaciones específicas.*/
 
-  private String nombre;
+  private String name;
   private int id;
-  public Empleado(String nombre, int id) {
-    this.nombre = nombre;
+  public Employee(String name, int id) {
+    this.name = name;
     this.id = id;
   }
-  public String getNombre() {
-    return nombre;
+  public String getName() {
+    return name;
   }
-  public abstract double calcularSalario();
+  public abstract double calculateSalary();
 
   /* Explicación:
    Clase Abstracta Empleado:

@@ -3,16 +3,16 @@ package org.poo.fundamentals.concepts.AccessModifiers.staticFinal.staticExample;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class EjemploStaticBlock {
+public class ExampleStaticBlock {
   /* Bloques static
    Definición: Un bloque static es un bloque de código que se ejecuta una vez cuando la clase se carga en memoria.
    Se usa para inicializar variables static.*/
-  private static final Logger logger = LoggerFactory.getLogger(EjemploStaticBlock.class);
-  public static int valor;
+  private static final Logger logger = LoggerFactory.getLogger(ExampleStaticBlock.class);
+  public static int value;
   static {
-    valor = 42; // Inicialización estática
+    value = 42; // Static initialization
   }
-  public static void mostrarValor() {
-    logger.info("Valor: {}", valor);
+  public static void showValue() {
+    logger.info("Value: {}", value);
   }
 }

@@ -17,28 +17,28 @@ public class Animal {
      para proporcionar una funcionalidad específica.
      4. Polimorfismo: Las instancias de la subclase pueden ser tratadas como instancias de la superclase, lo que
      permite la implementación de métodos que funcionen de manera general con diferentes tipos de objetos. */
-  private String nombre;
-  private int edad;
-  public Animal(String nombre, int edad) {
-    this.nombre = nombre;
-    this.edad = edad;
+  private String name;
+  private int age;
+  public Animal(String name, int age) {
+    this.name = name;
+    this.age = age;
   }
-  public String getNombre() {
-    return nombre;
+  public String getName() {
+    return name;
   }
-  public void setNombre(String nombre) {
-    this.nombre = nombre;
+  public void setNombre(String name) {
+    this.name = name;
   }
-  public int getEdad() {
-    return edad;
+  public int getAge() {
+    return age;
   }
-  public void setEdad(int edad) {
-    this.edad = edad;
+  public void setAge(int age) {
+    this.age = age;
   }
-  public void hacerSonido() {
-    logger.info("El animal hace un sonido");
+  public void makeSound() {
+    logger.info("The animal makes a sound.");
   }
-  public void describir() {
-    logger.info("Soy un {}, mi nombre es {} y tengo {} años.", getClass().getSimpleName(), nombre, edad);
+  public void describe() {
+    logger.info("I'm a {}, my name is {} and I'm {} years old.", getClass().getSimpleName(), name, age);
   }
 }

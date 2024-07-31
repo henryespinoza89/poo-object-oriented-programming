@@ -1,21 +1,21 @@
 package org.poo.fundamentals.abstraction.interfaces;
 
-public class CirculoInt implements Forma {
-  private double radio;
-  private String color;
-  public CirculoInt(String color, double radio) {
-    this.color = color;
-    this.radio = radio;
+public class CirculoInt implements Shape {
+  private double radius;
+  private String colour;
+  public CirculoInt(String colour, double radius) {
+    this.colour = colour;
+    this.radius = radius;
   }
-  public String getColor() {
-    return color;
-  }
-  @Override
-  public double calcularArea() {
-    return Math.PI * radio * radio;
+  public String getColour() {
+    return colour;
   }
   @Override
-  public double calcularPerimetro() {
-    return 2 * Math.PI * radio;
+  public double calculateArea() {
+    return Math.PI * radius * radius;
+  }
+  @Override
+  public double calculatePerimeter() {
+    return 2 * Math.PI * radius;
   }
 }

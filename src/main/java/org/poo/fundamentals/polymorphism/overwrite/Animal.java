@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class Animal {
   private static final Logger logger = LoggerFactory.getLogger(Animal.class);
-    public void hacerSonido() {
-      logger.info("El animal hace un sonido");
+    public void makeSound() {
+      logger.info("The animal makes a sound.");
     }
 }

@@ -3,10 +3,10 @@ package org.poo.fundamentals.concepts.AccessModifiers.package1;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ClaseB {
-  private static final Logger logger = LoggerFactory.getLogger(ClaseB.class);
+public class ClassB {
+  private static final Logger logger = LoggerFactory.getLogger(ClassB.class);
   public void accessFromSamePackage() {
-    ClaseA a = new ClaseA();
+    ClassA a = new ClassA();
     logger.info(String.valueOf(a.publicField)); // Acceso permitido
     logger.info(String.valueOf(a.protectedField)); // Acceso permitido
     logger.info(String.valueOf(a.defaultField)); // Acceso permitido

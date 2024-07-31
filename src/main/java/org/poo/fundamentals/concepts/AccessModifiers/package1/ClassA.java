@@ -3,7 +3,7 @@ package org.poo.fundamentals.concepts.AccessModifiers.package1;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ClaseA {
+public class ClassA {
   /* Los modificadores de acceso en Java son palabras clave que determinan la visibilidad y accesibilidad de clases,
    métodos y atributos en un programa. Estos modificadores controlan desde qué otras clases o paquetes se puede
    acceder a ciertos miembros de una clase. Los principales modificadores de acceso en Java son public, protected,
@@ -24,22 +24,22 @@ public class ClaseA {
    private:
    Visibilidad: El método o atributo es accesible solo dentro de su propia clase.
    Uso: Utilizado para encapsular datos y métodos, ocultándolos de otras clases, incluso dentro del mismo paquete.*/
-  private static final Logger logger = LoggerFactory.getLogger(ClaseA.class);
+  private static final Logger logger = LoggerFactory.getLogger(ClassA.class);
   public int publicField = 1;
   protected int protectedField = 2;
   int defaultField = 3; // Default (package-private)
   private int privateField = 4;
   public void publicMethod() {
-    logger.info("Método público");
+    logger.info("Public method");
   }
   protected void protectedMethod() {
-    logger.info("Método protegido");
+    logger.info("Protected method");
   }
   void defaultMethod() {
-    logger.info("Método por defecto (package-private)");
+    logger.info("Default method (package-private)");
   }
   private void privateMethod() {
-    logger.info("Método privado");
+    logger.info("Private method");
   }
   public void accessFieldsAndMethods() {
     // Acceso a todos los campos y métodos dentro de la misma clase

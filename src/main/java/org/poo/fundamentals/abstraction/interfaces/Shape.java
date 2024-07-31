@@ -1,14 +1,14 @@
 package org.poo.fundamentals.abstraction.interfaces;
 
-public interface Forma {
+public interface Shape {
   /* Descripción: Las interfaces en Java son una herramienta poderosa para lograr la abstracción. Una interfaz
      define un contrato que las clases deben cumplir, sin dictar cómo deben implementar los métodos. Las interfaces
      solo pueden declarar métodos sin implementación y variables (que son implícitamente public, static y final). */
   /* Ejemplo: Imaginemos un sistema para diferentes tipos de formas geométricas. Podemos crear una interfaz Forma
      que define métodos para calcular el área y el perímetro, y luego crear clases específicas para CirculoInt y
      RectanguloInt que implementan esta interfaz. */
-  double calcularArea();
-  double calcularPerimetro();
+  double calculateArea();
+  double calculatePerimeter();
   /* Explicación del Ejemplo
      Interfaz Forma:
      Declara los métodos calcularArea() y calcularPerimetro() que las clases deben implementar. */

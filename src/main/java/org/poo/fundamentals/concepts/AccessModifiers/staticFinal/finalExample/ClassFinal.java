@@ -1,6 +1,6 @@
 package org.poo.fundamentals.concepts.AccessModifiers.staticFinal.finalExample;
 
-public final class ClaseFinal {
+public final class ClassFinal {
   /* Clases final
    Definición: Una clase declarada como final no puede ser extendida. Esto es útil para evitar la herencia y
    proteger la implementación de una clase.

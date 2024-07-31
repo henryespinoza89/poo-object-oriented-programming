@@ -1,19 +1,19 @@
 package org.poo.fundamentals;
 
-import org.poo.fundamentals.abstraction.abstractClass.Circulo;
-import org.poo.fundamentals.abstraction.abstractClass.Rectangulo;
+import org.poo.fundamentals.abstraction.abstractClass.Circle;
+import org.poo.fundamentals.abstraction.abstractClass.Rectangle;
 import org.poo.fundamentals.abstraction.interfaces.CirculoInt;
-import org.poo.fundamentals.abstraction.interfaces.RectanguloInt;
-import org.poo.fundamentals.concepts.AccessModifiers.staticFinal.staticExample.Contador;
-import org.poo.fundamentals.concepts.AccessModifiers.staticFinal.staticExample.EjemploStaticBlock;
-import org.poo.fundamentals.concepts.AccessModifiers.staticFinal.staticExample.Utilidades;
-import org.poo.fundamentals.concepts.abstractClasses.Empleado;
-import org.poo.fundamentals.concepts.abstractClasses.EmpleadoMedioTiempo;
-import org.poo.fundamentals.concepts.abstractClasses.EmpleadoTiempoCompleto;
-import org.poo.fundamentals.encapsulation.Persona;
+import org.poo.fundamentals.abstraction.interfaces.RectangleInt;
+import org.poo.fundamentals.concepts.AccessModifiers.staticFinal.staticExample.Counter;
+import org.poo.fundamentals.concepts.AccessModifiers.staticFinal.staticExample.ExampleStaticBlock;
+import org.poo.fundamentals.concepts.AccessModifiers.staticFinal.staticExample.Utilities;
+import org.poo.fundamentals.concepts.abstractClasses.Employee;
+import org.poo.fundamentals.concepts.abstractClasses.EmployeePartTime;
+import org.poo.fundamentals.concepts.abstractClasses.EmployeeFullTime;
+import org.poo.fundamentals.encapsulation.Person;
 import org.poo.fundamentals.inheritance.Animal;
-import org.poo.fundamentals.inheritance.Perro;
-import org.poo.fundamentals.polymorphism.overload.Calculadora;
+import org.poo.fundamentals.inheritance.Dog;
+import org.poo.fundamentals.polymorphism.overload.Calculator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,56 +22,56 @@ public class Main {
   public static void main(String[] args) {
     /* inheritance */
     Animal animal = new Animal("Thor", 6);
-    animal.hacerSonido();
-    animal.describir();
-    Perro perro = new Perro("chihuahua", "Saturno", 5);
-    perro.hacerSonido();
-    perro.describir();
+    animal.makeSound();
+    animal.describe();
+    Dog dog = new Dog("chihuahua", "Saturno", 5);
+    dog.makeSound();
+    dog.describe();
     /* encapsulation */
-    Persona persona = new Persona("Jose", 25);
-    logger.info("Nombre {}", persona.getNombre());
-    logger.info("Edad {}", persona.getEdad());
-    persona.describir();
-    persona.setEdad(-5);
-    /* Polimorfismo */
-    Calculadora calculadora = new Calculadora();
-    logger.info("Suma de enteros: {}", calculadora.sumar(2, 3));
-    logger.info("Suma de dobles: {}", calculadora.sumar(2.0, 3.0));
+    Person person = new Person("Jose", 25);
+    logger.info("Name {}", person.getName());
+    logger.info("Age {}", person.getAge());
+    person.describe();
+    person.setAge(-5);
+    /* Polymorphism */
+    Calculator calculator = new Calculator();
+    logger.info("sum of integers: {}", calculator.add(2, 3));
+    logger.info("sum of doubles: {}", calculator.add(2.0, 3.0));
     org.poo.fundamentals.polymorphism.overwrite.Animal newAnimal = new org.poo.fundamentals.polymorphism.overwrite.Animal();
-    org.poo.fundamentals.polymorphism.overwrite.Animal miPerro = new org.poo.fundamentals.polymorphism.overwrite.Perro();
-    newAnimal.hacerSonido();
-    miPerro.hacerSonido();
+    org.poo.fundamentals.polymorphism.overwrite.Animal miDog = new org.poo.fundamentals.polymorphism.overwrite.Dog();
+    newAnimal.makeSound();
+    miDog.makeSound();
     /* Abstraction */
-    /* Usando clases abstractas */
-    Circulo circulo = new Circulo("Rojo", 5);
-    Rectangulo rectangulo = new Rectangulo("Azul", 4, 7);
-    logger.info("Color del círculo: {}", circulo.getColor());
-    logger.info("Área del círculo: {}", circulo.calcularArea());
-    logger.info("Perímetro del círculo: {}", circulo.calcularPerimetro());
-    logger.info("Color del rectángulo: {}", rectangulo.getColor());
-    logger.info("Área del rectángulo: {}", rectangulo.calcularArea());
-    logger.info("Perímetro del rectángulo: {}", rectangulo.calcularPerimetro());
-    /* Usando interfaces */
-    CirculoInt circuloI = new CirculoInt("Rojo", 5);
-    RectanguloInt rectanguloI = new RectanguloInt("Azul", 4, 7);
-    logger.info("Color del círculo: {}", circuloI.getColor());
-    logger.info("Área del círculo: {}", circuloI.calcularArea());
-    logger.info("Perímetro del círculo: {}", circuloI.calcularPerimetro());
-    logger.info("Color del rectángulo: {}", rectanguloI.getColor());
-    logger.info("Área del rectángulo: {}", rectanguloI.calcularArea());
-    logger.info("Perímetro del rectángulo: {}", rectanguloI.calcularPerimetro());
-    /* Clases abstractas */
-    Empleado emp1 = new EmpleadoTiempoCompleto("Juan", 1, 50000);
-    Empleado emp2 = new EmpleadoMedioTiempo("Ana", 2, 20, 25);
-    logger.info("Salario de {}: {}", emp1.getNombre(), emp1.calcularSalario());
-    logger.info("Salario de {}: {}", emp2.getNombre(), emp2.calcularSalario());
-    /* Modificadores static y final */
-    Contador c1 = new Contador();
-    Contador c2 = new Contador();
-    Contador.mostrarCuenta(); // Output: Cuenta: 2
+    /* Using abstract classes */
+    Circle circle = new Circle("Red", 5);
+    Rectangle rectangle = new Rectangle("Blue", 4, 7);
+    logger.info("Circle color: {}", circle.getColour());
+    logger.info("Circle area: {}", circle.calculateArea());
+    logger.info("Circle perimeter: {}", circle.calculatePerimeter());
+    logger.info("Rectangle colour: {}", rectangle.getColour());
+    logger.info("Rectangle area: {}", rectangle.calculateArea());
+    logger.info("Rectangle perimeter: {}", rectangle.calculatePerimeter());
+    /* Using interfaces */
+    CirculoInt circuloI = new CirculoInt("Red", 5);
+    RectangleInt rectanguloI = new RectangleInt("Blue", 4, 7);
+    logger.info("Circle color: {}", circuloI.getColour());
+    logger.info("Circle area: {}", circuloI.calculateArea());
+    logger.info("Circle perimeter: {}", circuloI.calculatePerimeter());
+    logger.info("Rectangle colour: {}", rectanguloI.getColour());
+    logger.info("Rectangle area: {}", rectanguloI.calculateArea());
+    logger.info("Rectangle perimeter: {}", rectanguloI.calculatePerimeter());
+    /* Abstracts classes */
+    Employee emp1 = new EmployeeFullTime("Juan", 1, 50000);
+    Employee emp2 = new EmployeePartTime("Ana", 2, 20, 25);
+    logger.info("Salary of {}: {}", emp1.getName(), emp1.calculateSalary());
+    logger.info("Salary of {}: {}", emp2.getName(), emp2.calculateSalary());
+    /* Modifiers static and final */
+    Counter c1 = new Counter();
+    Counter c2 = new Counter();
+    Counter.showAccount(); // Output: Account: 2
     /* Static */
-    int resultado = Utilidades.sumar(5, 3); // Llama al método estático sin crear una instancia de Utilidades
-    logger.info("Resultado: {}", resultado); // Output: Resultado: 8
-    EjemploStaticBlock.mostrarValor(); // Output: Valor: 42
+    int result = Utilities.add(5, 3); // Call the static method without creating an instance of Utilities
+    logger.info("Result: {}", result); // Output: Result: 8
+    ExampleStaticBlock.showValue(); // Output: Value: 42
   }
 }

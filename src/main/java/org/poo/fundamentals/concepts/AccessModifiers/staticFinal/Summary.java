@@ -1,6 +1,6 @@
 package org.poo.fundamentals.concepts.AccessModifiers.staticFinal;
 
-public class Resumen {
+public class Summary {
   /* Resumen
    static:
    Variables: Son variables de clase compartidas por todas las instancias de la clase.
