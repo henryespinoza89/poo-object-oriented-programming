@@ -46,3 +46,39 @@ poo-fundamentals/src/main/java/org/poo/fundamentals/inheritance/Dog.java
 
 > [!NOTE]
 > Puedes encontrar más información en el siguiente link: [POO-herencia](https://www.javatpoint.com/inheritance-in-java)
+
+## Polimorfismo
+El polimorfismo permite que un método pueda comportarse de diferentes maneras según el objeto que lo invoque.
+Hay dos tipos principales de polimorfismo que veremos a continuación:
+
+`Ejemplo 01`
+1. Polimorfismo de Compilación (Sobrecarga de Métodos): Permite definir múltiples métodos con el mismo nombre
+pero con diferentes parámetros en la misma clase, proporcionando flexibilidad para usar el mismo método en diferentes contextos.
+Nuestro primer método de la clase Calculator es sobrecargado para sumar dos enteros y el segundo para sumar dos números decimales.
+
+```sh
+poo-fundamentals/src/main/java/org/poo/fundamentals/polymorphism/overload/Calculator.java
+```
+
+`Ejemplo 02`
+
+2. Polimorfismo de Ejecución (Sobrescritura de Métodos): Permite que una subclase sobrescriba un método de su
+superclase para proporcionar una implementación específica. Esto permite que un método se comporte de manera diferente según el objeto que lo invoque.
+El polimorfismo facilita la extensibilidad y la reutilización del código, permitiendo que los objetos de diferentes clases sean tratados de manera uniforme a través de una interfaz común.
+
+```sh
+poo-fundamentals/src/main/java/org/poo/fundamentals/polymorphism/overwrite/Dog.java
+```
+
+> [!NOTE]
+> Puedes encontrar más información en el siguiente link: [POO-polimorfismo](https://www.javatpoint.com/method-overloading-in-java)
+
+
+
+
+
+
+
+
+
+
