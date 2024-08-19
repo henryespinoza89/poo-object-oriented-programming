@@ -10,8 +10,4 @@ public class EmployeeFullTime extends Employee {
   public double calculateSalary() {
     return salaryBase;
   }
-  /* Explicación:
-   Subclase EmpleadoTiempoCompleto:
-   Extiende Empleado e implementa el método abstracto calcularSalario() para calcular el salario de un empleado
-   a tiempo completo.*/
 }

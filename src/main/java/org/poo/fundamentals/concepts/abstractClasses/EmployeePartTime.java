@@ -12,8 +12,4 @@ public class EmployeePartTime extends Employee {
   public double calculateSalary() {
     return salaryPerHour + hoursWorked;
   }
-  /* Explicación:
-   Subclase EmpleadoMedioTiempo:
-   Extiende Empleado e implementa el método abstracto calcularSalario() para calcular el salario de un empleado
-   a medio tiempo.*/
 }
